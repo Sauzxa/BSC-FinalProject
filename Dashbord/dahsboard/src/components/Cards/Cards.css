@@ -1,0 +1,36 @@
+.Cards {
+  display: flex;
+  gap: 10px;
+
+}
+.parentContainer{
+  width: 100%;
+}
+.addCard{
+  background: linear-gradient(
+    106.37deg,
+    rgb(27, 93, 25) 29.63%,
+    rgb(71, 186, 65) 51.55%,
+    #10d020 90.85%
+  );
+  border-radius: 20px;
+}
+.addCard:hover{
+ color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 1200px) {
+  .Cards{
+    flex-direction: column;
+  }
+  .parentContainer{
+    height: 9rem;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  .Cards{
+    width: 90%;
+  }
+}
